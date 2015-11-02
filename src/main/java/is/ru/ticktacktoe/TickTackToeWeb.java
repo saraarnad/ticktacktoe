@@ -10,7 +10,6 @@ public class TickTackToeWeb implements SparkApplication
 
 	public static void main(String[] args)
 	{
-		get("/hello", (req, res) -> "Hello World");
 		/*
 		staticFileLocation("/public");
 		SparkApplication TickTackToe = new TickTackToeWeb();
@@ -21,15 +20,22 @@ public class TickTackToeWeb implements SparkApplication
 		}*/
 
 		//TickTackToe.init();
+
+
+		staticFileLocation("/public");
+        SparkApplication TickTackToeWeb = new TickTackToeWeb();
+
+        String port = System.getenv("PORT");
+        if (port != null) {
+            port(Integer.valueOf(port));
+        }
+
+        TickTackToeWeb.init();
 	}
 
-	//@Override
-	/*
+	@Override
 	public void init()
 	{
-		if (game == null)
-		{
-			game = new TickTackToe();
-		}
-	}*/
+		get("/hello", (req, res) -> "Hello World");
+	}
 }
