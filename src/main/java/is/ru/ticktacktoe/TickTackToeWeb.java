@@ -36,8 +36,6 @@ public class TickTackToeWeb implements SparkApplication
 	@Override
 	public void init()
 	{
-		if(game == null){
-			game = TickTackToe();
-		}
+	
 	}
 }
