@@ -7,17 +7,22 @@
  * user guide available at https://docs.gradle.org/2.8/userguide/tutorial_java_projects.html
  */
 
+
+
+
+//SUP
 // Apply the java plugin to add support for Java
 apply plugin: "java"
 
 apply plugin: "jacoco"
+
+apply plugin: 'application'
 
 mainClassName = "is.ru.ticktacktoe.TickTackToeWeb"
 
 jar {
     manifest { attributes("Main-Class": "is.ru.ticktacktoe.TickTackToeWeb") }
 }
-
 
 jacoco {
     toolVersion = "0.7.1.201405082137"
