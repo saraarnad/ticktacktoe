@@ -2,7 +2,7 @@ package is.ru.ticktacktoe;
 
 public class TickTackToe {
 
-   public static string intRet() {
+   public static String intRet() {
         return "ZUUUUPP!";
     }
     public static int uncovered() {
