@@ -6,7 +6,6 @@ import spark.servlet.SparkApplication;
 
 public class TickTackToeWeb implements SparkApplication
 {
-	//buaa til constructor?
 	private TickTackToe game;
 
 	public static void main(String[] args)
@@ -22,7 +21,7 @@ public class TickTackToeWeb implements SparkApplication
 		TickTackToe.init();
 	}
 
-	//@Override
+	@Override
 	public void init()
 	{
 		if (game == null)
