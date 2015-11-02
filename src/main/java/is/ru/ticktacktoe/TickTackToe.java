@@ -2,8 +2,8 @@ package is.ru.ticktacktoe;
 
 public class TickTackToe {
 
-   public static int intRet() {
-        return 0;
+   public static string intRet() {
+        return "ZUUUUPP!";
     }
     public static int uncovered() {
     	System.out.println("I am an uncovered function");
@@ -15,4 +15,6 @@ public class TickTackToe {
         for(String param: args)
             System.out.println("Parameter : "+param);
     }
+
+
 }
