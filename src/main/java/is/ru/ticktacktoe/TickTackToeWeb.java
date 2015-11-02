@@ -36,6 +36,8 @@ public class TickTackToeWeb implements SparkApplication
 	@Override
 	public void init()
 	{
-		get("/hello", (req, res) -> "Hello World");
+		if(game == null){
+			game = TickTackToe();
+		}
 	}
 }
