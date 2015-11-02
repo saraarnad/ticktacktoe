@@ -18,10 +18,10 @@ public class TickTackToeWeb implements SparkApplication
 			port(Integer.valueOf(port));
 		}
 
-		TickTackToe.init();
+		//TickTackToe.init();
 	}
 
-	@Override
+	//@Override
 	public void init()
 	{
 		if (game == null)
